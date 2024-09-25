@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
         <ul class="menu">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <a class="menu-link" href="./indext.html"><li>Bordes</li></a>
+            <a class="menu-link" href="./password.html"><li>Password</li></a>
+            <a class="menu-link" href="./stickers.html"><li>Stikers</li></a>
         </ul>
     </nav>
+    <div class="container-ppal-img">
+        <div class="container-img">
+            <!-- IMAGEN CON BORDE  -->
+            <img class="imagen-bordes" src="/assets/img/FSOCIETY.png" alt="fsociety" onclick="
+                imagen = document.querySelector('.imagen-bordes');
+                if (imagen.style.borderColor === 'rgba(255, 0, 0, 0.5)') {
+                    imagen.border = '0px';
+                    imagen.style.borderColor = '';
+                } else {
+                    imagen.border = '2px';
+                    imagen.style.borderColor = 'rgba(255, 0, 0, 0.5)';
+                }"
+            >
+        </div>
+    </div>
 </body>
 </html>

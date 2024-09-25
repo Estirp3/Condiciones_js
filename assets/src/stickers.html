@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <a class="menu-link" href="./indext.html"><li>Bordes</li></a>
+            <a class="menu-link" href="./password.html"><li>Password</li></a>
+            <a class="menu-link" href="./stickers.html"><li>Stikers</li></a>
+        </ul>
+    </nav>
+
+
+    <div class="container-ppal">
+        <!-- Título -->
+        <div> 
+            <p class="tittle">Puedes llevar hasta 10 stickers en total</p>
+        </div>
+
+        <!-- Container de Fichas  -->
+        <div class="container-cards">
+            <div class="fichas">
+                <img class="img-sticker" src="../img/stickerGithub.jpeg" alt="Github">
+                <input type="number" class="github" value="0" min="0" max="10" pattern="^[0-9]+" onclick="
+                        var valorgh = Number(document.querySelector('.github').value);
+                        var valorsl = Number(document.querySelector('.slack').value);
+                        var valorg  = Number(document.querySelector('.git').value);
+                        var cantidad = Number(valorgh + valorg + valorsl);
+                        if (cantidad > 10) {
+                            mje = document.querySelector('.mensaje').innerHTML;
+                            mje = 'Llevas demasiados stickers';
+                        } else {
+                                mje = document.querySelector('.mensaje').innerHTML;
+                                mje = 'Llevas ' + cantidad + ' sticker(s)';
+                        }
+                        document.querySelector('.mensaje').innerHTML = mje; 
+                    "
+                    onblur="
+                        var valorgh = Number(document.querySelector('.github').value);
+                        var valorsl = Number(document.querySelector('.slack').value);
+                        var valorg  = Number(document.querySelector('.git').value);
+                        var cantidad = Number(valorgh + valorg + valorsl);
+                        if (cantidad > 10) {
+                            mje = document.querySelector('.mensaje').innerHTML;
+                            mje = 'Llevas demasiados stickers';
+                        } else {
+                                mje = document.querySelector('.mensaje').innerHTML;
+                                mje = 'Llevas ' + cantidad + ' sticker(s)';
+                        }
+                        document.querySelector('.mensaje').innerHTML = mje; 
+                    "
+                    >
+            </div>
+            <div class="fichas">
+                <img class="img-sticker" src="../img/stickerSlack.jpeg" alt="slack">
+                <input type="number" class="slack" value="0" min="0" max="10" pattern="^[0-9]+" onclick="
+                        let valorgh = Number(document.querySelector('.github').value);
+                        let valorsl = Number(document.querySelector('.slack').value);
+                        let valorg  = Number(document.querySelector('.git').value);
+                        let cantidad = Number(valorgh + valorg + valorsl);
+                        if (cantidad > 10) {
+                            mje = document.querySelector('.mensaje').innerHTML;
+                            mje = 'Llevas demasiados stickers';
+                        } else {
+                                mje = document.querySelector('.mensaje').innerHTML;
+                                mje = 'Llevas ' + cantidad + ' sticker(s)';
+                        }
+                        document.querySelector('.mensaje').innerHTML = mje;  
+                    "
+                    onblur="
+                        let valorgh = Number(document.querySelector('.github').value);
+                        let valorsl = Number(document.querySelector('.slack').value);
+                        let valorg  = Number(document.querySelector('.git').value);
+                        let cantidad = Number(valorgh + valorg + valorsl);
+                        if (cantidad > 10) {
+                            mje = document.querySelector('.mensaje').innerHTML;
+                            mje = 'Llevas demasiados stickers';
+                        } else {
+                                mje = document.querySelector('.mensaje').innerHTML;
+                                mje = 'Llevas ' + cantidad + ' sticker(s)';
+                        }
+                        document.querySelector('.mensaje').innerHTML = mje;"
+                    >
+            </div>
+            <div class="fichas">
+                <img class="img-sticker" src="../img/stickerGit.jpeg" alt="Git">
+                <input type="number" class="git" value="0" min="0" max="10" pattern="^[0-9]+" onclick="
+                        let valorgh = Number(document.querySelector('.github').value);
+                        let valorsl = Number(document.querySelector('.slack').value);
+                        let valorg  = Number(document.querySelector('.git').value);
+                        let cantidad = Number(valorgh + valorg + valorsl);
+                        if (cantidad > 10) {
+                            mje = document.querySelector('.mensaje').innerHTML;
+                            mje = 'Llevas demasiados stickers';
+                        } else {
+                                mje = document.querySelector('.mensaje').innerHTML;
+                                mje = 'Llevas ' + cantidad + ' sticker(s)';
+                        }
+                        document.querySelector('.mensaje').innerHTML = mje;"
+                    onblur="
+                        let valorgh = Number(document.querySelector('.github').value);
+                        let valorsl = Number(document.querySelector('.slack').value);
+                        let valorg  = Number(document.querySelector('.git').value);
+                        let cantidad = Number(valorgh + valorg + valorsl);
+                        if (cantidad > 10) {
+                            mje = document.querySelector('.mensaje').innerHTML;
+                            mje = 'Llevas demasiados stickers';
+                        } else {
+                                mje = document.querySelector('.mensaje').innerHTML;
+                                mje = 'Llevas ' + cantidad + ' sticker(s)';
+                        }
+                        document.querySelector('.mensaje').innerHTML = mje;" 
+                    >
+            </div>
+        </div>
+        <p class="mensaje">Llevas 0 stickers</p>
+    </div>
+    
+</body>
+</html>

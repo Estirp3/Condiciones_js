@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: double;
+    padding: 20px;
+}
+a{
+    margin-left: 24px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BORDES EN IMAGEN */
+.container-ppal-img {
+    margin: auto;
+    display: flex;
+    padding-top: 10em;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    /* background-color: blue; */
+    gap: 2rem;
+}
+
+.container-img {
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    border: solid 2px rebeccapurple;
+}
+
+.imagen-bordes {
+    margin: 20px;
+    
+}
+img {
+    width: 850px;  /* Ancho de la imagen */
+    height: 600px; /* Alto de la imagen */
+  }
+
+
+
+/* STICKERS */
+.container-ppal {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center; 
+    align-content: center;
+    gap: 2rem;
+    border: solid 3px black;
+    margin: 100px 400px;
+}
+
+.tittle {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.fichas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid rgb(187, 183, 183);
+}
+
+.img-sticker {
+    width: 200px;
+    height: 200px;
+}
+
+input {
+    width: 5rem;
+}
+
+.mensaje {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px;
+}
+
+
+
+/* PASSWORD */
+.container-pw {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-items: center;
+    gap: 2rem;
+    margin: 100px auto; /* Cambiar el margen horizontal a auto para centrar */
+    padding: 50px 5px;
+    border: solid 3px black;
+}
+
+
+.containerNumber {
+    display: flex;
+    width: 50vw;
+    align-content: center;
+    justify-content: center;
+    /* background-color: blue; */
+    gap: 1rem;
+}
+
+.btnin {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
